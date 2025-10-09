@@ -1,0 +1,4 @@
+LDA 4200h
+ANI 0Fh
+STA 4201h
+HLT
