@@ -1,0 +1,15 @@
+clc;
+clear;
+close all;
+
+Ki = 0.5;      % Integral Gain
+ACE = 0.1;     % Area Control Error
+t = 0:0.1:20;
+
+u = Ki * ACE * t;   % Integral controller output
+
+plot(t,u,'LineWidth',2);
+grid on;
+xlabel('Time (s)');
+ylabel('Controller Output');
+title('Integral Controller Response in LFC');
